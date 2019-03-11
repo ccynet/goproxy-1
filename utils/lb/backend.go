@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/snail007/goproxy/utils/dnsx"
+	"goproxy/utils/dnsx"
 )
 
 // BackendConfig it's the configuration loaded

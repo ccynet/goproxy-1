@@ -1,0 +1,12 @@
+149.248.13.19
+
+  proxy http -t tcp -p :33441 -T tls -P "149.248.13.19:33441" -P "139.180.134.14:33441" -C proxy.crt -K proxy.key --always --forever --daemon
+./proxy http -t tcp -p :33441 -T tls -P "149.248.13.19:33441" -P "139.180.134.14:33441" -C proxy.crt -K proxy.key --always --forever --daemon
+
+  proxy dns -S http -T tls -P "149.248.13.19:33441" -P "139.180.134.14:33441" -C proxy.crt -K proxy.key -p :5353
+./proxy dns -S http -T tls -P "149.248.13.19:33441" -C proxy.crt -K proxy.key -p :65353
+
+
+./proxyarm5.key http -t tcp -p :33441 -T tls -P "149.248.13.19:33441" -P "139.180.134.14:33441" -C proxy.crt -K proxy.key --always --forever --daemon
+
+./proxyarm5.key dns -S http -T tls -P "149.248.13.19:33441" -C proxy.crt -K proxy.key -p :65353

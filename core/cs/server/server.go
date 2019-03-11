@@ -11,12 +11,12 @@ import (
 	"runtime/debug"
 	"strconv"
 
-	tou "github.com/snail007/goproxy/core/dst"
-	compressconn "github.com/snail007/goproxy/core/lib/transport"
-	transportc "github.com/snail007/goproxy/core/lib/transport"
-	encryptconn "github.com/snail007/goproxy/core/lib/transport/encrypt"
+	tou "goproxy/core/dst"
+	compressconn "goproxy/core/lib/transport"
+	transportc "goproxy/core/lib/transport"
+	encryptconn "goproxy/core/lib/transport/encrypt"
 
-	"github.com/snail007/goproxy/core/lib/kcpcfg"
+	"goproxy/core/lib/kcpcfg"
 
 	kcp "github.com/xtaci/kcp-go"
 )
